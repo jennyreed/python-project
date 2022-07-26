@@ -1,4 +1,7 @@
 # Python program for implementation of Bubble Sort
+import time
+startTime = time.time()
+values = []
 
 def bubbleSort(arr):
 	n = len(arr)
@@ -13,7 +16,11 @@ def bubbleSort(arr):
 		
 			return
 
-arr = [64, 34, 25, 12, 22, 11, 90]
+fileObj = open('data.txt', 'r')
+arr = fileObj.read().splitlines()
+fileObj.close()
+print('unsorted:\n')
+print(arr)
 
 bubbleSort(arr)
 
