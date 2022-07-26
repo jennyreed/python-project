@@ -2,7 +2,7 @@ import sys
 A = [49, 398, 9, 809, 4, 54, 27]
 # Traverse through all array elements
 for i in range(len(A)):
-  
+
  # Find the minimum element in remaining
  # unsorted array
  min_idx = i
