@@ -16,11 +16,7 @@ def bubbleSort(arr):
 		
 			return
 
-fileObj = open('data.txt', 'r')
-arr = fileObj.read().splitlines()
-fileObj.close()
-print('unsorted:\n')
-print(arr)
+arr = [64, 34, 25, 12, 22, 11, 90]
 
 bubbleSort(arr)
 
