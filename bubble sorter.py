@@ -1,7 +1,6 @@
 import time
-
 startTime = time.time()
-values = []
+array = []
 
 def bubbleSort(arr):
 
@@ -16,16 +15,16 @@ def bubbleSort(arr):
             if not swapped:
                 return
 
-    print('\nsorted:\n')
-    print(values)
+    print('\nSorted Array:\n')
+    print(array)
 
 fileObj = open('data2.txt', 'r')
-values = fileObj.read().splitlines()
+array = fileObj.read().splitlines()
 fileObj.close()
-print('unsorted:\n')
-print(values)
+print('Unsorted Array\n')
+print(array)
 
-bubbleSort(values)
+bubbleSort(array)
 
 executeTime = (time.time() - startTime)
-print('time elapsed: ' + str(executeTime))
+print('Time taken to sort: ' + str(executeTime))

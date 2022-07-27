@@ -1,22 +1,27 @@
-import sys
-A = [49, 398, 9, 809, 4, 54, 27]
-# Traverse through all array elements
-for i in range(len(A)):
+import time
+startTime = time.time()
+array = []
+sortedArray = []
 
- # Find the minimum element in remaining
- # unsorted array
- min_idx = i
- for j in range(i + 1, len(A)):
-  if A[min_idx] > A[j]:
-   min_idx = j
+def selectionSort(arr):
     
- # Swap the found minimum element with
- # the first element  
- A[i], A[min_idx] = A[min_idx], A[i]
- 
-# Driver code to test above
-print ("Sorted array")
-for i in range(len(A)):
- print("%d" %A[i]),
+    for i in range(len(arr)):
+        smallestVal = min(arr)
+        sortedArray.append(smallestVal)
+        array.remove(min(array))
+        
+    print('\nSorted Array:\n')
+    print(sortedArray)
 
-	   
+
+
+fileObj = open('data2.txt', 'r')
+array = fileObj.read().splitlines()
+fileObj.close()
+print('Unsorted Array:\n')
+print(array)
+
+selectionSort(array)
+
+executeTime = (time.time() - startTime)
+print('Time taken to sort: ' + str(executeTime))
