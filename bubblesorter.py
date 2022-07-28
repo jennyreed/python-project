@@ -17,6 +17,7 @@ def bubbleSort(arr):
 
     print('\nSorted Array:\n')
     print(array)
+    return arr
 
 fileObj = open('data2.txt', 'r')
 array = fileObj.read().splitlines()
