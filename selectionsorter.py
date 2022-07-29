@@ -12,8 +12,7 @@ def selecsort(arr):
 
     return arr
         
-print('\nSorted Array:\n')
-print(sortedArray)
+
 
 fileObj = open('data2.txt', 'r')
 array = fileObj.read().splitlines()
@@ -22,6 +21,8 @@ print('Unsorted Array:\n')
 print(array)
 
 selecsort(array)
+print('\nSorted Array:\n')
+print(sortedArray)
 
 executeTime = (time.time() - startTime)
 print('Time taken to sort: ' + str(executeTime))

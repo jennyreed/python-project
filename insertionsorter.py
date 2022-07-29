@@ -1,8 +1,8 @@
 import time
 startTime = time.time()
-array = []
+a = []
 
-def insertsort(array):
+def insertsort(a):
   
     # traversing the array from 1 to length of the array(a)
     for i in range(1, len(a)):
@@ -17,7 +17,7 @@ def insertsort(array):
                 a[j+1] = a[j]
                 j -= 1
         a[j+1] = temp
-        return array
+    return a
 
         
 fileObj = open('data2.txt', 'r')
