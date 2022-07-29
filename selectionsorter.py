@@ -9,11 +9,11 @@ def selecsort(arr):
         smallestVal = min(arr)
         sortedArray.append(smallestVal)
         array.remove(min(array))
+
+    return arr
         
-    print('\nSorted Array:\n')
-    print(sortedArray)
-
-
+print('\nSorted Array:\n')
+print(sortedArray)
 
 fileObj = open('data2.txt', 'r')
 array = fileObj.read().splitlines()

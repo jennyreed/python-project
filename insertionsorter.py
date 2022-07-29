@@ -1,7 +1,8 @@
 import time
 startTime = time.time()
+array = []
 
-def InsertionSort(a):
+def insertsort(array):
   
     # traversing the array from 1 to length of the array(a)
     for i in range(1, len(a)):
@@ -16,13 +17,16 @@ def InsertionSort(a):
                 a[j+1] = a[j]
                 j -= 1
         a[j+1] = temp
+        return array
 
         
 fileObj = open('data2.txt', 'r')
 a = fileObj.read().splitlines()
 fileObj.close()
-InsertionSort(a)
-print("Array after sorting:")
+print('Unsorted arr\n')
+print(a)
+insertsort(a)
+print('\nSorted arr:\n')  
 print(a)
 
 executeTime = (time.time() - startTime)
