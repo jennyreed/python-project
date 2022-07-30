@@ -9,17 +9,17 @@ bestcase= sorted(averagecase)
 worstcase= sorted(averagecase, reverse=True)
 
 
-def test_SelectWorst():
+def test_InsertWorst():
     start= time()
     assert insertsort(list.copy(worstcase)) == bestcase
     print(time()-start)
  
-def test_SelectBest():
+def test_InsertBest():
     start= time()
     assert insertsort(list.copy(bestcase)) == bestcase
     print(time()-start)
  
-def test_SelectAvg():
+def test_InsertAvg():
     start= time()
     assert insertsort(list.copy(averagecase)) == bestcase
     print(time()-start)
