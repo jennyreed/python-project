@@ -1,6 +1,6 @@
 import time
 startTime = time.time()
-a = []
+a= []
 
 def insertsort(a):
   
