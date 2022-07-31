@@ -21,8 +21,7 @@ print('Unsorted Array:\n')
 print(array)
 
 selecsort(array)
-print('\nSorted Array:\n')
-print(sortedArray)
+
 
 executeTime = (time.time() - startTime)
 print('Time taken to sort: ' + str(executeTime))

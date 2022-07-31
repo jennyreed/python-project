@@ -1,5 +1,4 @@
 from random import randint, random
-
 from numpy import average
 from bubblesorter import bubbleSort, arr
 from time import time
