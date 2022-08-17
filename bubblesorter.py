@@ -17,7 +17,7 @@ def bubbleSort(arr):
     # Return the sorted array
     return arr
 
-fileObj = open('data.txt', 'r')
+fileObj = open('data2.txt', 'r')
 arr = fileObj.read().splitlines()
 fileObj.close()
 data = np.array(arr).astype(np.float64)
