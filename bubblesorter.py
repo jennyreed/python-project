@@ -45,18 +45,18 @@ x_values = indexes
 
 # print sorted data in graph
 
-sortedData = bubbleSort(np.copy(data))
-plt.figure(1)
-plt.scatter(indexes, sortedData)
-plt.yticks(np.arange(min(sortedData), max(sortedData), 0.2))
+# sortedData = bubbleSort(np.copy(data))
+# plt.figure(1)
+# plt.scatter(indexes, sortedData)
+# plt.yticks(np.arange(min(sortedData), max(sortedData), 0.2))
 
 
 #print unsorted data in graph
 
-plt.figure(2)
-plt.scatter(indexes, data)
-plt.yticks(np.arange(min(data), max(data), 0.2))
+# plt.figure(2)
+# plt.scatter(indexes, data)
+# plt.yticks(np.arange(min(data), max(data), 0.2))
 
-#show graph
+# #show graph
 
-plt.show()
+# plt.show()

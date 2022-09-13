@@ -9,17 +9,13 @@ def insertsort(a):
   
         temp = a[i]
   
-        # Shift elements of array[0 to i-1], that are
-        # greater than temp, to one position ahead
-        # of their current position
         j = i-1
         while j >=0 and temp < a[j] :
                 a[j+1] = a[j]
                 j -= 1
         a[j+1] = temp
     return a
-
-        
+     
 fileObj = open('data2.txt', 'r')
 a = fileObj.read().splitlines()
 fileObj.close()
